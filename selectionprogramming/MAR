@@ -1,0 +1,20 @@
+#!/bin/bash
+echo Enter day of the month
+read day
+echo Enter Month
+read month
+if [ $month -eq 4 -a $day -ge 1 -a $day -le 30 ]
+   then
+      echo True
+   elif [ $month -eq 5 -a $day -ge 1 -a $day -le 31 ]
+   then
+      echo True
+   elif [ $month -eq 3 -a $day -ge 20 -a $day -le 31 ]
+   then
+      echo True
+   elif [ $month -eq 6 -a $day -le 20 -a $day -gt 1 ]
+   then
+      echo True
+   else
+      echo False
+fi
